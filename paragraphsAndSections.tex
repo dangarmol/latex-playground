@@ -1,0 +1,36 @@
+\documentclass{article}  % Setting the document type
+
+% These are the attributes of the document
+\title{My first \LaTeX{} document}
+\date{2020-09-27}
+\author{Daniel G.}
+
+\begin{document}  % The document environment must always be the uppermost
+   \pagenumbering{gobble}  % We don't want page numbers on the title page
+   \maketitle  % Without this, the attributes would be in the document, but no title page would be generated
+   \newpage  % Starts a new page after the cover page. Without this, the text would come immediately after the title
+   \pagenumbering{arabic}  % After the title page, we want to go back to arabic numerals
+
+   My first document!
+
+   \section{Section}  % Sections are self explainatory
+
+   The first section is here.
+
+   \subsection{Subsection}  % Sections are numbered, thus appear in the contents list
+
+   And it has a subsection.
+
+   \subsubsection{Subsubsection}
+
+   And a subsubsection (does that word even exist?)
+
+   \paragraph{Paragraph}  % Paragraphs are not numbered, so they don't appear in the contents list
+
+   This is a paragraph.
+
+   \subparagraph{Subparagraph}
+
+   And a subparagraph.
+
+\end{document}
