@@ -1,0 +1,62 @@
+\documentclass{article}
+
+% Package used to embed images in the text with {figure}.
+\usepackage{graphicx}
+% Package used to embed a cluster of images with {subfigure}.
+\usepackage{subcaption}
+
+\begin{document}
+
+% h (here) - same location
+% t (top) - top of page
+% b (bottom) - bottom of page
+% p (page) - on an extra page
+% ! (override) - will force the specified location
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{assets/GOPR0076.JPG}
+  \caption{Car in Trinidad}
+  \label{fig:car}
+\end{figure}
+
+% The graphicx library keeps references in place with the right number automatically.
+Figure \ref{fig:car} shows a car on a beach in the Island of Trinidad.
+
+\begin{figure}[h!]
+   \centering
+   \begin{subfigure}[b]{0.4\linewidth}
+     \includegraphics[width=\linewidth]{assets/GOPR1264.JPG}
+     \caption{Summer}
+   \end{subfigure}
+   \begin{subfigure}[b]{0.4\linewidth}
+     \includegraphics[width=\linewidth]{assets/GOPR0018.JPG}
+     \caption{Winter}
+   \end{subfigure}
+   \caption{A comparison of Summer and Winter holidays!}
+   \label{fig:holidays2x}
+\end{figure}
+
+\pagebreak
+
+\begin{figure}[h!]
+   \centering
+   \begin{subfigure}[b]{0.2\linewidth}
+     \includegraphics[width=\linewidth]{assets/GOPR1264.JPG}
+      \caption{Costa da Caparica}
+   \end{subfigure}
+   \begin{subfigure}[b]{0.2\linewidth}
+     \includegraphics[width=\linewidth]{assets/GOPR1218.JPG}
+     \caption{Sunset over Lisbon}
+   \end{subfigure}
+   \begin{subfigure}[b]{0.2\linewidth}
+     \includegraphics[width=\linewidth]{assets/GOPR1343.JPG}
+     \caption{Bridge in Venice}
+   \end{subfigure}
+   \begin{subfigure}[b]{0.5\linewidth}
+     \includegraphics[width=\linewidth]{assets/GOPR0835.JPG}
+     \caption{Vista do Rei, Azores}
+   \end{subfigure}
+   \caption{Some more gorgeous holiday pictures.}
+   \label{fig:holidays4x}
+ \end{figure}
+
+\end{document}
