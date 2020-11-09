@@ -1,0 +1,49 @@
+\documentclass{article}
+
+% Used for changing the spacing of your table of contents (and document in general).
+\usepackage{setspace}
+
+% Only show a subset of the headings for all sections or for a particular section.
+% A value of 0 means that your table of contents will show nothing at all and 5 means, that even subparagraphs will be shown.
+% The value has to be set in the preamble of your document and automatically applies to the whole document.
+\setcounter{tocdepth}{1} % Show sections
+%\setcounter{tocdepth}{2} % + subsections
+%\setcounter{tocdepth}{3} % + subsubsections
+%\setcounter{tocdepth}{4} % + paragraphs
+%\setcounter{tocdepth}{5} % + subparagraphs
+
+\begin{document}
+
+\doublespacing  % Sets the spacing between lines of the following section.
+\tableofcontents  % Shows a table of contents with sections, subsections, etc.
+\singlespacing  % Back to single spacing.
+\newpage
+
+\section{Section}
+
+First section
+
+\subsection{Subsection}
+
+First subsection
+
+% You can also adjust the tocdepth for each section individually.
+\addtocontents{toc}{\setcounter{tocdepth}{3}} % Reset to default (3)
+\section{Another section}
+\subsection{Subsection}
+\subsubsection{Subsubsection}
+
+\begin{figure}
+   \caption{Dummy figure}
+\end{figure}
+ 
+\begin{table}
+   \caption{Dummy table}
+\end{table}
+
+\begin{appendix}
+   \listoffigures  % Shows a list of all figures in the document.
+   \listoftables  % Shows a list of all tables in the document.
+\end{appendix}
+
+\end{document}
