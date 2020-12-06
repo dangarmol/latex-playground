@@ -1,0 +1,17 @@
+\documentclass{article}
+
+\usepackage[backend=biber]{biblatex}  % There are many other options that can be used here. See note about it.
+
+\bibliography{bibliography}
+
+\begin{document}
+
+Random citation \cite{BOOK:1} embedded in text.
+
+Random footnote citation \autocite[1]{EINSTEIN} in the text.
+
+\newpage
+
+\printbibliography  % Prints the bibliography with all the sources used in the document.
+
+\end{document}
